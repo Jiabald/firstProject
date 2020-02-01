@@ -2,9 +2,116 @@
     margin: 0;
     padding: 0;
 }
+a,
+a:link,
+a:visited,
+a:hover,
+a:active{
+    text-decoration: none;
+}
 .body-bg{
     background-color: #222D32;
 }
+.red{
+    color: red;
+}
 .mt-150{
     margin-top: 150px;
+}
+// 侧边栏
+.lt-aside{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 180px;
+    height: 100%;
+    transition: left .5s;
+    h4{
+        background-color: #367FA9;
+        height: 50px;
+        line-height: 50px;
+        margin: 0;
+        color: #fff;
+        font-size: 24px;
+    }
+    .info{
+        text-align: center;
+        img{
+            border-radius: 50%;
+            width: 100px;
+            margin: 20px 0;
+        }
+        p{
+            font-size: 18px;
+            color: #fff;
+        }
+    }
+    >ul{
+        margin-top: 40px;
+        li{
+            a{
+                display: block;
+                color: #fff;
+                padding-left: 45px;
+                line-height: 45px;
+                font-size: 16px;
+            }
+        }
+        .second{
+            display: none;
+            a{
+                padding-left: 60px;
+            }
+        }
+        .current{
+                a{
+                    background-color: #1D1F21;
+                    border-left: 3px solid #069;
+                }
+        }
+    }
+}
+//主体
+.lt-main{
+    padding-left: 180px;
+    // height: 1000px;
+    transition: padding .5s;
+    //头部工具条
+    .topbar{
+        position: fixed;
+        left: 0;
+        top:0;
+        width: 100%;
+        height: 50px;
+        background-color: #3C8DBC;
+        padding-left: 180px;
+        transition: padding .5s;
+        z-index: 888;
+        a{
+            padding: 0 10px;
+            line-height: 50px;
+            font-size: 26px;
+            color: #fff;
+        }
+    }
+    //主体内容
+    .content{
+        padding: 60px 10px 10px;
+    }
+}
+
+//隐藏侧边栏思路 把所有类名封装到一个容器里面进行控制
+//侧边栏隐藏
+body.hidemenu{
+    .lt-aside{
+        left: -180px;
+    }
+    .lt-main{
+        padding-left: 0;
+        .topbar{
+            padding-left: 0;
+        }
+    }
+
 }

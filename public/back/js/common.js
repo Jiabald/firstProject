@@ -38,3 +38,30 @@ $(document).ajaxStop(function() {
     //console.log('最后一个请求结束了');
     NProgress.done();
 });
+
+$(function() {
+    //二级导航栏的展开合并
+    $('.cate-link').click(function() {
+        $('.second').slideToggle();
+    });
+
+    //点击切换侧边栏
+    $('.menu').click(function() {
+        $('body').toggleClass('hidemenu')
+    });
+
+    //退出功能
+    $('.btn-logout').click(function() {
+        $.ajax({
+            url: '/employee/employeeLogout',
+            dataType: 'json',
+            success: function(info) {
+                // console.log(info);
+                //退出成功跳转登录页
+                if (info.success) {
+                    location.href = './login.html';
+                }
+            }
+        })
+    })
+})

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>首页</title>
+    <title>商品管理</title>
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./lib/nprogress/nprogress.css">
     <link rel="stylesheet" href="css/common.css">
@@ -27,17 +27,16 @@
             <li>
                 <a href="#" class="cate-link"><span class="glyphicon glyphicon-th-list"></span> 分类管理</a>
                 <ul class="second">
-                    <li><a href="one.html">一级管理</a></li>
-                    <li><a href="two.html">二级管理</a></li>
+                    <li><a href="one.html">一级分类</a></li>
+                    <li><a href="two.html">二级分类</a></li>
                 </ul>
             </li>
-            <li><a href="product.html"><span class="glyphicon glyphicon-shopping-cart"></span> 商品管理</a></li>
+            <li class="current"><a href="product.html"><span class="glyphicon glyphicon-shopping-cart"></span> 商品管理</a></li>
         </ul>
     </div>
 
     <!-- 主体 -->
     <div class="lt-main">
-        <!-- 导航栏 -->
         <div class="topbar">
             <a href="#" class="menu pull-left"><span class="glyphicon glyphicon-resize-horizontal"></span></a>
             <a href="#" class="logout pull-right" data-toggle="modal" data-target=".modal-logout"><span class="glyphicon glyphicon-log-out" ></span></a>
@@ -45,21 +44,8 @@
         <div class="content">
             <ol class="breadcrumb">
                 <li><a href="#">后台管理</a></li>
-                <li class="active">首页</li>
+                <li class="active">商品管理</li>
             </ol>
-            <!-- 图表 -->
-            <div class="container">
-                <div class="row">
-                    <!-- 图表一 -->
-                    <div class="col-sm-6">
-                        <div id="char1" style="height: 400px;"></div>
-                    </div>
-                    <!-- 图表二 -->
-                    <div class="col-sm-6">
-                        <div id="char2" style="height: 400px;"></div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 
@@ -87,10 +73,8 @@
     <script src="./lib/jquery/jquery.min.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="./lib/nprogress/nprogress.js"></script>
-    <script src="./lib/echarts/echarts.min.js"></script>
     <script src="./js/isLogin.js"></script>
     <script src="./js/common.js"></script>
-    <script src="./js/index.js"></script>
 </body>
 
 </html>
