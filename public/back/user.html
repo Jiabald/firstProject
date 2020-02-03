@@ -136,7 +136,7 @@
         {{each rows v i}}
         <tr>
             <!-- 当后端id删除时id值不会发生改变 -->
-            <td>{{ (page-1)*5 + i +1}}</td>
+            <td>{{ (page-1)*size + i +1}}</td>
             <td>{{ v.username }}</td>
             <td>{{ v.mobile }}</td>
             <td>{{v.isDelete == 1 ? '正常':'禁用'}}</td>
