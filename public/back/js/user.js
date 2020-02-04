@@ -54,8 +54,8 @@ $(function() {
         currentId = $(this).parent().data('id');
         isDelete = $(this).hasClass('btn-success') ? 1 : 0; //1启用 0禁用
 
-        console.log(currentId);
-        console.log(isDelete);
+        // console.log(currentId);
+        // console.log(isDelete);
     });
 
     //4-点击确定按钮发送请求
