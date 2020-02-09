@@ -1,0 +1,87 @@
+html,
+body {
+  height: 100%;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.lt-layout {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 640px;
+  min-height: 320px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 45px 0 50px 0;
+}
+.lt-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 45px;
+  background-color: #069;
+  padding: 0 45px;
+}
+.lt-header h4 {
+  text-align: center;
+  line-height: 45px;
+  margin: 0;
+  color: #fff;
+  font-weight: normal;
+  font-size: 20px;
+}
+.lt-header a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 45px;
+  height: 45px;
+  color: #fff;
+  font-weight: 900;
+  text-align: center;
+  line-height: 45px;
+  font-size: 24px;
+}
+.lt-header .search {
+  left: auto;
+  right: 0;
+}
+.lt-main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.lt-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #069;
+}
+.lt-footer ul {
+  height: 100%;
+}
+.lt-footer ul li {
+  padding-top: 8px;
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.lt-footer ul li a {
+  color: #fff;
+}
+.lt-footer ul li a span {
+  display: block;
+}
+.lt-footer ul li a span:nth-child(2) {
+  font-size: 12px;
+}
+.lt-footer ul .orange a {
+  color: orange;
+}

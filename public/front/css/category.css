@@ -1,0 +1,32 @@
+.cate-nav {
+  float: left;
+  height: 100%;
+  width: 90px;
+  position: relative;
+}
+.cate-nav ul li a {
+  display: block;
+  line-height: 50px;
+  width: 90px;
+  height: 50px;
+  text-align: center;
+  border-right: 1px solid red;
+  border-bottom: 1px solid red;
+}
+.cate-nav ul .current a {
+  border-right: none;
+  color: red;
+}
+.cate-content {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.cate-content ul li {
+  text-align: center;
+  float: left;
+  width: 33.33%;
+}
+.cate-content ul li img {
+  width: 70%;
+}

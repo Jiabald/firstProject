@@ -1,0 +1,40 @@
+.lt-nav {
+  padding: 10px;
+}
+.lt-nav li {
+  width: 33.33%;
+  float: left;
+}
+.lt-nav li img {
+  display: block;
+  width: 100%;
+}
+.lt-profuct {
+  padding: 10px;
+}
+.lt-profuct .item {
+  float: left;
+  width: 48%;
+  margin: 0 1%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+.lt-profuct .item img {
+  width: 100%;
+}
+.lt-profuct .item .price {
+  margin-bottom: 20px;
+}
+.lt-profuct .item .price span {
+  font-size: 14px;
+}
+.lt-profuct .item .price span:nth-child(1) {
+  color: red;
+}
+.lt-profuct .item .price span:nth-child(2) {
+  color: #aaa;
+  text-decoration: line-through;
+}
